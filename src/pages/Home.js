@@ -60,9 +60,7 @@ const Home = (u) => {
           user={u.user}
           profile={{ username: username, snurs: snurs, tag: tag }}
         />
-        <div className="home-tasks-container">
-          <Tasks user={u.user.uid} />
-        </div>
+        <Tasks user={u.user.uid} />
       </div>
     </div>
   );
