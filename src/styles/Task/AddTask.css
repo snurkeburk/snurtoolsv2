@@ -1,0 +1,143 @@
+.Add-task-header {
+    position: absolute;
+   display: grid;
+   grid-template-rows: auto 1fr 4rem;
+    color: white;
+    width: 100%;
+    height: 100%;
+}
+
+.add-task-top-container {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    z-index: 1;
+}
+.add-task-tabs-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    padding: 1rem 0rem;
+}
+
+.add-task-tab p{
+    cursor: pointer;
+    background-color: rgb(0, 0, 0);
+    border-width: 1px;
+    border-radius: 1rem;
+    width: .5rem;
+    height: .5rem;
+}
+
+.add-task-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.add-task-input {
+    margin-top: 2rem;
+    width: 50%;
+    height: 2rem;
+    border-radius: 0.6rem;
+    border-style: none;
+
+    padding: 0.2rem 0.5rem;
+    font-size: 1.3rem;
+    color: rgb(0, 0, 0);
+    z-index: 2;
+}
+
+.add-task-button-container {
+    margin-top: 1rem;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.add-task-button-container button{
+    font-weight: 500;
+    color: rgba(62, 247, 176, 0.795);
+    /* add a text shadow to make the text more visible */
+    text-shadow: 1px 1px 1px rgba(0, 0, 1px, 0.2);
+    background: none;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.add-task-button-container .add-task-button-done {
+    background-color: rgba(62, 247, 176, 0.795);
+    color: white;
+    padding: 0.2rem 0.5rem;
+    border-radius: 5px;
+}
+
+.calendar-show-add-task-button {
+    width: 3rem;
+    height: 3rem;
+    position: absolute;
+    z-index: 15;
+    top: 1rem;
+    left: 1rem;
+    border-radius: 50%;
+    background: none;
+    border-style: solid;
+    border-color: white;
+    border-width: 3px;
+    color: rgba(255, 255, 255, 0.39);
+    backdrop-filter: blur(15px);
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+}
+
+.add-task-top-friends-container {
+  margin: 2rem 0rem;
+}
+
+.css-nen11g-MuiStack-root{
+    border-style: none !important;
+    outline: none !important;
+    width: 40vw !important;
+}
+
+.css-1gywuxd-MuiInputBase-root-MuiOutlinedInput-root {
+    color: white !important;
+}
+#tags-outlined-label {
+    color: rgba(255, 255, 255, 0.527);
+}
+#tags-outlined {
+    color: white !important
+}
+.MuiInputBase-root.MuiOutlinedInput-root.MuiInputBase-colorPrimary.MuiInputBase-fullWidth.MuiInputBase-formControl.MuiInputBase-adornedStart.MuiInputBase-adornedEnd.MuiAutocomplete-inputRoot.css-1gywuxd-MuiInputBase-root-MuiOutlinedInput-root {
+    color: white !important;
+}
+
+.MuiChip-label.MuiChip-labelMedium.css-6od3lo-MuiChip-label {
+    color: white !important;
+}
+.css-1gywuxd-MuiInputBase-root-MuiOutlinedInput-root
+{
+    border-radius: 0rem !important;
+}
+
+.add-task-info-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}

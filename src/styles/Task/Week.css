@@ -1,0 +1,65 @@
+.Week-header {
+    width: 100%;
+    height: 100%;
+}
+
+.week-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.week-timeline-horizontal-container {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    font-size: 0.9rem;
+    color: white;
+}
+.week-day {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 0.2rem;
+    z-index: 2;
+}
+.week-timeline-vertical-container {
+   /* outline-color: green;
+    outline-style: dashed;
+    outline-width: 1px;*/
+    width: 5%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border-right-style: dashed;
+    border-width: 1px;
+    border-color: white;
+    color: white;
+    padding: 0;
+    margin: 0;
+}
+
+.week-task {
+    background-color: rgba(135, 199, 255, 0.75);
+    border-radius: 0.5rem;
+    padding: 0rem;
+    text-align: center;
+    width: 100%;
+    backdrop-filter: blur(2px);
+    height: 60px;
+
+}
+
+
+
+

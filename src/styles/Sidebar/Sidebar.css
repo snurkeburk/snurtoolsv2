@@ -1,0 +1,45 @@
+#Sidebar {
+    z-index: 5;
+    width: 20rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    border-radius: 1rem;
+    align-items: center;
+    justify-content: flex-start;
+    margin:0px 60px;
+}
+
+
+
+.Settings {
+    position: absolute;
+    bottom: 0;
+    overflow: hidden;
+}
+#sidebar-toggle {
+    color: white;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 0rem 0.4rem;
+}
+
+.calendar-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.calendar-buttons button{
+    background: none;
+    padding: 0.5rem 0.75rem;
+    color: white;
+    border-radius: 50%;
+    border-width: 1px;
+    border-color: white;
+    cursor: pointer;
+}

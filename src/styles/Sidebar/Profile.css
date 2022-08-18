@@ -1,0 +1,24 @@
+#Profile img {
+    width: 4rem;
+    border-radius: 50%;
+}
+
+#Profile div{
+   display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.profile-username {
+    font-size: 4rem;
+}
+.profile-tag {
+    font-size: 0.8rem;
+}
+
+.Profile-container {
+    width: 313px;
+    height: 40vh;
+}

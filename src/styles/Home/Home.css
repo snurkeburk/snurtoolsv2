@@ -1,0 +1,21 @@
+.Home {
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    align-items: center;
+}
+.home-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 28rem auto;
+    padding: 0rem 2.5rem;
+}
+.loading-background {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 0.5rem;
+}

@@ -1,0 +1,38 @@
+.friendList-pfp-container {
+    height: 3rem;
+    width: 3rem;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}   
+
+.friend-image {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+}
+
+.friend-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+
+}
+
+.friend-list-item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: left;
+    padding: 0.5rem 0rem;
+    width: 80%;
+}
+
+.friend-list-name {
+    padding-left: 2rem;
+}

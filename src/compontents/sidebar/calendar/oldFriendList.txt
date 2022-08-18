@@ -1,0 +1,136 @@
+  return (
+      console.log("FRIEND IMAGE " + friendImage),
+      (
+        <div>
+          {friends.map((friend, index) => {
+            return (
+              <motion.div
+                initial="hidden"
+                animate={u.width == "300px" ? "visible" : "hidden"}
+                exit="exit"
+                variants={variants}
+                /* initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+                transition={{ duration: 0.5, ease: "easeInOut", delay: 0.1 }}
+                 style={
+                  u.width == "75px"
+                    ? {
+                        flexDirection: "column",
+                        alignItems: "center",
+                        justifyContent: "center",
+                      }
+                    : {
+                        flexDirection: "row",
+                        alignItems: "center",
+                        justifyContent: "flex-start",
+                        paddingLeft: "20px",
+                        paddingTop: "20px",
+                        marginLeft: "1rem",
+                      }
+                }*/
+                key={index}
+                id="friendList-friend"
+              >
+                {loadingImage ? (
+                  <p>Loading...</p>
+                ) : (
+                  <div className="friendList-pfp-container">
+                    <img
+                      id="friendList-pfp"
+                      src={friendImage[index]}
+                      alt="profile-picture"
+                    />
+                    <div id="friendList-friend-snurs">
+                      <p>{friend.snurs}</p>
+                    </div>
+                  </div>
+                )}
+                <motion.div
+                  transition={{
+                    duration: 0.5,
+                  }}
+                  variants={variantsText}
+                  initial="hidden"
+                  animate={u.width == "300px" ? "visible" : "hidden"}
+                  className="friendList-name-container"
+                >
+                  <p className="friendList-friend-name">{friend.username}</p>
+                  <p className="friendList-friend-tag">{friend.tag}</p>
+                </motion.div>
+              </motion.div>
+            );
+          })}
+        </div>
+      )
+    );
+
+
+
+
+    ------------------- AUTOFILL ----------------------
+    <Autocomplete
+                value={value}
+                multiple
+                id="checkboxes-tags-demo"
+                options={opts}
+                disableCloseOnSelect
+                limitTags={2}
+                onChange={(event, newValue) => {
+                  console.log(newValue);
+                  // check if event.target.value is in any of the objects in the value array
+                  //! the .split(" ")[0] is to get the username, not (You) at the end
+                  if (value.length > 0) {
+                    newValue.forEach((val) => {
+                      val.forEach((newVal) => {
+                        console.log("found" + val.username, newVal.username);
+                        if (val.username === newVal.username) {
+                          setValue(
+                            value.filter(
+                              (val) => val.username !== newVal.username
+                            )
+                          );
+                        } else {
+                          setValue(newValue);
+                        }
+                      });
+                      /* console.log(
+                        val.username == event.target.innerText.split(" ")[0]
+                      );
+                      if (
+                        val.username === event.target.innerText.split(" ")[0]
+                      ) {
+                        console.log("found");
+                        setValue(
+                          value.filter(
+                            (val) =>
+                              val.username !==
+                              event.target.innerText.split(" ")[0]
+                          )
+                        );
+                      } else {
+                        console.log("not found");
+                        setValue(newValue);
+                      }*/
+                    });
+                  } else {
+                    setValue(newValue);
+                  }
+                }}
+                getOptionLabel={(option) => option.username}
+                renderOption={(p, option, { selected }) => (
+                  <li {...p}>
+                    {option.username === User[0]?.username
+                      ? option.username + " (You)"
+                      : option.username}
+                  </li>
+                )}
+                style={{ width: 500, marginTop: "50px" }}
+                renderInput={(params) => (
+                  <TextField
+                    {...params}
+                    label="Add task to:"
+                    placeholder="Username"
+                  />
+                )}
+              /> 

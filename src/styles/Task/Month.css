@@ -1,0 +1,85 @@
+.Month {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.month-day-container {
+    display: grid;
+    grid-template-columns: repeat(7, 2.8rem);
+}
+
+.month-day{
+    width: 2rem;
+    height: 2rem;
+    margin: 0.3rem 0rem;
+    border-radius: 1rem;
+    border-style: solid;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.226);
+    backdrop-filter: blur(2px);
+    border-style: none;
+    color: white;
+    z-index: 2 !important;
+}
+
+.month-day.offset {
+    cursor: default;
+}
+
+.today{
+    font-size: larger;
+    font-weight: bold;
+}
+
+
+.Day-header {
+    background-color: green;
+}
+
+.month-item.Month-icon {
+    position: absolute;
+    top: 29vh;
+}
+
+.add-task-icon {
+    background: none;
+    position: absolute;
+    margin-top: -2rem;    
+    border-style: none;
+    color: rgb(139, 253, 191);
+    z-index: 3 ;
+    cursor: pointer;
+}
+.add-task-icon-small {
+    background: none;
+    position: absolute;
+    margin-top: -2rem;    
+    border-style: none;
+    color: rgba(255, 255, 255, 0.466);
+    z-index: 2;
+    cursor: pointer;
+}
+.calendar-clock {
+    font-size: 6rem;
+}
+.calendar-clock-seconds {
+    font-size: 3rem;
+}
+
+.Month-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.month-current {
+    width: 100%;
+    font-size: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
